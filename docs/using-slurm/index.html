@@ -10,16 +10,16 @@
 <meta name="description" content="Intro This documentation will go over the basics of using the Chili Pepper cluster. Please go through this documentation step-by-step. Contact the server administrator via email or use the Q&amp;A channel in the Slack Group.
 Step 1 - Understanding the Cluster Structure Chili Pepper cluster has a NAS which contains user home directories and other shared files. All users and groups are consistent across all nodes. The prefix for the user directory is /mnt/nas/users/.">
 <meta name="author" content="Dongook Son">
-<link rel="canonical" href="https://hpc.stat.yonsei.ac.kr/docs/using-slurm/" />
+<link rel="canonical" href="https://yonsei-stats-and-data-science.github.io/docs/using-slurm/" />
 <meta name="google-site-verification" content="XYZabc" />
 <link crossorigin="anonymous" href="/assets/css/stylesheet.min.c88963fe2d79462000fd0fb1b3737783c32855d340583e4523343f8735c787f0.css" integrity="sha256-yIlj/i15RiAA/Q&#43;xs3N3g8MoVdNAWD5FIzQ/hzXHh/A=" rel="preload stylesheet" as="style">
 <script defer crossorigin="anonymous" src="/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js" integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5&#43;kdJvBz5iKbt6B5PJI="
     onload="hljs.initHighlightingOnLoad();"></script>
-<link rel="icon" href="https://hpc.stat.yonsei.ac.kr/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://hpc.stat.yonsei.ac.kr/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://hpc.stat.yonsei.ac.kr/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://hpc.stat.yonsei.ac.kr/apple-touch-icon.png">
-<link rel="mask-icon" href="https://hpc.stat.yonsei.ac.kr/safari-pinned-tab.svg">
+<link rel="icon" href="https://yonsei-stats-and-data-science.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://yonsei-stats-and-data-science.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://yonsei-stats-and-data-science.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://yonsei-stats-and-data-science.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://yonsei-stats-and-data-science.github.io/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
 <meta name="generator" content="Hugo 0.92.2" />
@@ -35,7 +35,7 @@ Step 1 - Understanding the Cluster Structure Chili Pepper cluster has a NAS whic
 <meta property="og:description" content="Intro This documentation will go over the basics of using the Chili Pepper cluster. Please go through this documentation step-by-step. Contact the server administrator via email or use the Q&amp;A channel in the Slack Group.
 Step 1 - Understanding the Cluster Structure Chili Pepper cluster has a NAS which contains user home directories and other shared files. All users and groups are consistent across all nodes. The prefix for the user directory is /mnt/nas/users/." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://hpc.stat.yonsei.ac.kr/docs/using-slurm/" /><meta property="article:section" content="docs" />
+<meta property="og:url" content="https://yonsei-stats-and-data-science.github.io/docs/using-slurm/" /><meta property="article:section" content="docs" />
 <meta property="article:published_time" content="2022-02-21T12:12:53&#43;09:00" />
 <meta property="article:modified_time" content="2022-02-21T12:12:53&#43;09:00" />
 
@@ -54,13 +54,13 @@ Step 1 - Understanding the Cluster Structure Chili Pepper cluster has a NAS whic
       "@type": "ListItem",
       "position":  2 ,
       "name": "Docs",
-      "item": "https://hpc.stat.yonsei.ac.kr/docs/"
+      "item": "https://yonsei-stats-and-data-science.github.io/docs/"
     }, 
     {
       "@type": "ListItem",
       "position":  3 ,
       "name": "How do I use the Chili Pepper Cluster?",
-      "item": "https://hpc.stat.yonsei.ac.kr/docs/using-slurm/"
+      "item": "https://yonsei-stats-and-data-science.github.io/docs/using-slurm/"
     }
   ]
 }
@@ -86,14 +86,14 @@ Step 1 - Understanding the Cluster Structure Chili Pepper cluster has a NAS whic
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://hpc.stat.yonsei.ac.kr/docs/using-slurm/"
+    "@id": "https://yonsei-stats-and-data-science.github.io/docs/using-slurm/"
   },
   "publisher": {
     "@type": "Organization",
     "name": "Chili Pepper",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://hpc.stat.yonsei.ac.kr/favicon.ico"
+      "url": "https://yonsei-stats-and-data-science.github.io/favicon.ico"
     }
   }
 }
@@ -111,7 +111,7 @@ Step 1 - Understanding the Cluster Structure Chili Pepper cluster has a NAS whic
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://hpc.stat.yonsei.ac.kr" accesskey="h" title="Chili Pepper (Alt + H)">Chili Pepper</a>
+            <a href="https://yonsei-stats-and-data-science.github.io" accesskey="h" title="Chili Pepper (Alt + H)">Chili Pepper</a>
             <span class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -137,7 +137,7 @@ Step 1 - Understanding the Cluster Structure Chili Pepper cluster has a NAS whic
         </div>
         <ul id="menu">
             <li>
-                <a href="https://hpc.stat.yonsei.ac.kr/docs/" title="Docs">
+                <a href="https://yonsei-stats-and-data-science.github.io/docs/" title="Docs">
                     <span>Docs</span>
                 </a>
             </li>
@@ -148,7 +148,7 @@ Step 1 - Understanding the Cluster Structure Chili Pepper cluster has a NAS whic
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="https://hpc.stat.yonsei.ac.kr">Home</a>&nbsp;»&nbsp;<a href="https://hpc.stat.yonsei.ac.kr/docs/">Docs</a></div>
+    <div class="breadcrumbs"><a href="https://yonsei-stats-and-data-science.github.io">Home</a>&nbsp;»&nbsp;<a href="https://yonsei-stats-and-data-science.github.io/docs/">Docs</a></div>
     <h1 class="post-title">
       How do I use the Chili Pepper Cluster?
     </h1>
@@ -280,7 +280,7 @@ Step 1 - Understanding the Cluster Structure Chili Pepper cluster has a NAS whic
 </div>
 </div><p>Other various options for <code>scp</code> exist. More information on this topic can be found in this <a href="https://www.pcwdld.com/what-is-scp#wbounce-modal">article</a>. Also users can use GitHub or GitLab to upload and download source code to the cluster. This will be handled in a seperate article.</p>
 <h2 id="step-3---writing-a-sbatch-script-for-slurm">Step 3 - Writing a <code>SBATCH</code> script for SLURM.<a hidden class="anchor" aria-hidden="true" href="#step-3---writing-a-sbatch-script-for-slurm">#</a></h2>
-<p>From the homepage the <a href="https://hpc.stat.yonsei.ac.kr/tools/job-configurator.html">SLURM batch scripting tool</a> is available. Let&rsquo;s look at the sample script(<code>/mnt/nas/users/dummyuser/test_script.sh</code>) created by using the tool. The first-half(line 1 ~ 11) of the script consists of directives and parameters for the <code>slurm</code> job. Each user can set the number of nodes, the time for the job to occupy the number of nodes, the location for the output logfile. There are more options available for submitting a job. Additional resources for <code>SBATCH</code> arguments can be found <a href="https://slurm.schedmd.com/sbatch.html">here</a>.</p>
+<p>From the homepage the <a href="https://yonsei-stats-and-data-science.github.io/tools/job-configurator.html">SLURM batch scripting tool</a> is available. Let&rsquo;s look at the sample script(<code>/mnt/nas/users/dummyuser/test_script.sh</code>) created by using the tool. The first-half(line 1 ~ 11) of the script consists of directives and parameters for the <code>slurm</code> job. Each user can set the number of nodes, the time for the job to occupy the number of nodes, the location for the output logfile. There are more options available for submitting a job. Additional resources for <code>SBATCH</code> arguments can be found <a href="https://slurm.schedmd.com/sbatch.html">here</a>.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt" id="1"><a style="outline: none; text-decoration:none; color:inherit" href="#1"> 1</a>
@@ -370,7 +370,7 @@ Step 1 - Understanding the Cluster Structure Chili Pepper cluster has a NAS whic
 
   <footer class="post-footer">
 <nav class="paginav">
-  <a class="next" href="https://hpc.stat.yonsei.ac.kr/docs/configuring-jupyter-kernel/">
+  <a class="next" href="https://yonsei-stats-and-data-science.github.io/docs/configuring-jupyter-kernel/">
     <span class="title">Next Page »</span>
     <br>
     <span>Creating Your Custom Jupyter Kernel from a Virtual Environment</span>
@@ -384,11 +384,11 @@ Step 1 - Understanding the Cluster Structure Chili Pepper cluster has a NAS whic
 <footer class="footer">
     <p align="center">
         <a href="http://bk21-bigdata.yonsei.ac.kr/bbs/page.php?hid=equipment">
-        <img width='70%' src='https://hpc.stat.yonsei.ac.kr/images/logo.svg' alt='Yonsei BK logo'>
+        <img width='70%' src='https://yonsei-stats-and-data-science.github.io/images/logo.svg' alt='Yonsei BK logo'>
         </a>
         <br>
     </p>
-    <span>&copy; 2022 <a href="https://hpc.stat.yonsei.ac.kr">Chili Pepper</a></span>
+    <span>&copy; 2022 <a href="https://yonsei-stats-and-data-science.github.io">Chili Pepper</a></span>
     <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
