@@ -40,15 +40,15 @@
 			var printme = "#!/bin/bash <br>" +
 							"#<br>" +
 							"#SBATCH --job-name=" + document.config.job_name.value + "<br>" +
-							"#SBATCH --partition=all" + "<br>" +
-							"#SBATCH --nodelist=cpu-compute" + "<br>" +
+							"#SBATCH --partition=jobs" + "<br>" +
+							"#SBATCH --nodelist=hpc" + "<br>" +
 							"#SBATCH --account=" + document.config.id.value + "<br>" +
 							"#SBATCH --mem=" + document.config.mem.value + "<br>" +
 							"#SBATCH --ntasks=1" + "<br>" +
 							"#SBATCH --cpus-per-task=" + document.config.ntask.value + "<br>" +
 							"#SBATCH --time=" + document.config.job_time.value + "<br>" +
-							"#SBATCH --output=/mnt/nas/users/" + document.config.id.value + "/" + document.config.job_name.value + ".log" + "<br>" +
-							"#SBATCH --error=/mnt/nas/users/" + document.config.id.value + "/" + document.config.job_name.value + ".err" + "<br>"
+							"#SBATCH --output=/data/home/" + document.config.id.value + "/" + document.config.job_name.value + ".log" + "<br>" +
+							"#SBATCH --error=/data/home/" + document.config.id.value + "/" + document.config.job_name.value + ".err" + "<br>"
 							"<br>" + document.config.script.value.replace(/(\n|\r\n)/g, '<br>')
 
 			document.open();
@@ -79,14 +79,14 @@
 			var job_script = "#!/bin/bash <br>" +
 								"#<br>" +
 								"#SBATCH --job-name=" + document.config.job_name.value + "<br>" +
-								"#SBATCH --partition=all" + "<br>" +
+								"#SBATCH --partition=jobs" + "<br>" +
 								"#SBATCH --account=" + document.config.id.value + "<br>" +
 								"#SBATCH --mem=" + document.config.mem.value + "<br>" +
 								"#SBATCH --ntasks=1" + "<br>" +
 								"#SBATCH --cpus-per-task=" + document.config.ntask.value + "<br>" +
 								"#SBATCH --time=" + document.config.job_time.value + "<br>" +
-								"#SBATCH --output=/mnt/nas/users/" + document.config.id.value + "/" + document.config.job_name.value + ".log" + "<br>" +
-								"#SBATCH --error=/mnt/nas/users/" + document.config.id.value + "/" + document.config.job_name.value + ".err" + "<br>"
+								"#SBATCH --output=/data/home/" + document.config.id.value + "/" + document.config.job_name.value + ".log" + "<br>" +
+								"#SBATCH --error=/data/home/" + document.config.id.value + "/" + document.config.job_name.value + ".err" + "<br>"
 			
 			var gpu_script = "#SBATCH --gres=gpu:1" + "<br>" + "#SBATCH --nodelist=gpu-compute"
 			
@@ -142,15 +142,15 @@
 			var printme = "#!/bin/bash <br>" +
 							"#<br>" +
 							"#SBATCH --job-name=" + document.config.job_name.value + "<br>" +
-							"#SBATCH --partition=all" + "<br>" +							
+							"#SBATCH --partition=jobs" + "<br>" +							
 							"#SBATCH --account=" + document.config.id.value + "<br>" +
 							"#SBATCH --mem=" + document.config.mem.value + "<br>" +
 							"#SBATCH --ntasks=1" + "<br>" +
 							"#SBATCH --cpus-per-task=" + document.config.ntask.value + "<br>" +
 							"#SBATCH --time=" + document.config.job_time.value + "<br>" +
-							"#SBATCH --output=/mnt/nas/users/" + document.config.id.value + "/" + document.config.job_name.value + ".log" + "<br>" +
-							"#SBATCH --error=/mnt/nas/users/" + document.config.id.value + "/" + document.config.job_name.value + ".err" + "<br>" +
-							"#SBATCH --nodelist=cpu-compute" + "<br>" + 
+							"#SBATCH --output=/data/home/" + document.config.id.value + "/" + document.config.job_name.value + ".log" + "<br>" +
+							"#SBATCH --error=/data/home/" + document.config.id.value + "/" + document.config.job_name.value + ".err" + "<br>" +
+							"#SBATCH --nodelist=hpc" + "<br>" + 
 							"<br>" + document.config.script.value.replace(/(\n|\r\n)/g, '<br>')
 
 			document.querySelector("#result").innerHTML = printme + document.config.script.placeholder;
